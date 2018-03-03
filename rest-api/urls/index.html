@@ -109,74 +109,109 @@
 </thead>
 <tbody>
 <tr>
-<td><code>/base/api/getdata/&lt;table_id&gt;/</code></td>
-<td>GET</td>
-<td>Requisita os dados da tabela com id igual a <code>table_id</code></td>
-<td>Retorna um JSON contendo os dados requisitados</td>
-<td>Retorna um erro de status 500 do servidor</td>
-</tr>
-<tr>
-<td><code>/base/api/getmetadata/&lt;datasetID&gt;/</code></td>
+<td>/base/api/getmetadata/(datasetID)/</td>
 <td>GET</td>
 <td>Requisita os metadados da tabela de id <code>datasetID</code></td>
 <td>Retorna um JSON contendo os metadados da tabela</td>
 <td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
-<td><code>/base/api/getrandommetadata/&lt;limit&gt;/</code></td>
+<td>/base/api/getrandommetadata/(limit)/</td>
 <td>GET</td>
 <td>Requisita os metadados de <code>limit</code> tabelas aleatórioas</td>
 <td>Retorna um JSON contendo um array de metadados de tabelas</td>
 <td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
-<td><code>/base/api/searchmetadata/&lt;keywords&gt;</code></td>
+<td>/base/api/searchmetadata/(keywords)</td>
 <td>GET</td>
 <td>Requisita os metadados de tabelas que possuam <code>keywords</code> no título ou descrição</td>
 <td>Retorna um JSON contendo um array de metadados</td>
 <td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/base/api/getdata/(tableId)/</td>
+<td>GET</td>
+<td>Requisita os dados da tabela com id igual a <code>table_id</code></td>
+<td>Retorna um JSON contendo os dados requisitados</td>
+<td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/base/api/getdata/(tableId)/orderBy=(orderBy)/</td>
+<td>GET</td>
+<td>Requisita os dados da table com id igual a <code>table_id</code> ordenados pelo campo <code>orderBy</code></td>
+<td>Retorna um JSON contendo os dados da tabela</td>
+<td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/base/api/getdata/(tableId)/(limit)/</td>
+<td>GET</td>
+<td>Requisita os dados da tabela de id <code>table_id</code> limitando o número de linhas a <code>limit</code></td>
+<td>Retorna um JSON contendo os dados da tabela limitados</td>
+<td>Retorna um erro de status 500 de servidor</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/base/api/getdata/(tableId)/(selectColumns)/</td>
+<td>GET</td>
+<td>Requisita o conteúdo das colunas <code>selectColumns</code> da tabela de id <code>tableId</code></td>
+<td>Retorna um JSON contendo os dados das colunas</td>
+<td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/base/api/getdata/(tableId)/(selectColumns)/(limit)/</td>
+<td>GET</td>
+<td>Requisita o conteúdo das colunas <code>selectColumns</code> da tabela de id <code>tableId</code> limitadas a <code>limit</code> linhas</td>
+<td>Retorna um JSON contendo o conteúdo das colunas limitado</td>
+<td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/base/api/getdata/(tableId)/(groupBy) /(aggFunc)/(aggColumns)/</td>
+<td>GET</td>
+<td>Requisita os dados da tabela de id <code>tableId</code> agrupados pela coluna <code>groupBy</code> e agregados pela função <code>aggFunc</code> nas colunas <code>aggColumns</code></td>
+<td>Retorna um JSON contendo os dados requisitados</td>
+<td>Retorna um erro de stats 500 do servidor</td>
+</tr>
+<tr>
+<td>/base/api/getdata/(tableId)/(groupBy)/(aggFunc) /(aggColumns)/orderBy=(orderBy)/</td>
+<td>GET</td>
+<td>Requisita os dados da tabela de id <code>tableId</code> agrupados pela coluna <code>groupBy</code> e agregados pela função <code>aggFunc</code> nas colunas <code>aggColumns</code> ordenadors pela coluna <code>orderBy</code></td>
+<td>Retorna um JSON contendo os dados requisitados</td>
+<td>Retorna um erro de stats 500 do servidor</td>
+</tr>
+<tr>
+<td>/base/api/getdata/(tableId)/(groupBy)/(aggFunc) /(aggColumns)/(limit)</td>
+<td>GET</td>
+<td>Requisita os dados da tabela de id <code>tableId</code> agrupados pela coluna <code>groupBy</code> e agregados pela função <code>aggFunc</code> nas colunas <code>aggColumns</code> limitados às <code>limit</code> primeiras colunas</td>
+<td>Retorna um JSON contendo os dados requisitados</td>
+<td>Retorna um erro de stats 500 do servidor</td>
+</tr>
+<tr>
+<td>/base/api/getdata/(tableId)/(groupBy)/(aggFunc) /(aggColumns)/groupBy=(groupBy)/(limit)/</td>
+<td>GET</td>
+<td>Requisita os dados da tabela de id <code>tableId</code> agrupados pela coluna <code>groupBy</code> e agregados pela função <code>aggFunc</code> nas colunas <code>aggColumns</code> ordenados ela coluna <code>orderBy</code> e limitados às <code>limit</code> primeiras linhas</td>
+<td>Retorna um JSON contendo os dados requisitados</td>
+<td>Retorna um erro de stats 500 do servidor</td>
+</tr>
+<tr>
+<td>/base/api/joindata/(tableIdRoot)/(tableIdJoin) /(columnsRoot)/(columnsJoin)/</td>
+<td>GET</td>
+<td>Requisita o  join entre as tabelas de id <code>tableIdRoot</code> e <code>tableIdJoin</code>, incluindo as colunas <code>columnsRoot</code> e <code>columnsJoin</code></td>
+<td>Retorna um JSON contendo o join requisitado</td>
+<td>Retorna um erro de status 500 do servidor</td>
+</tr>
+<tr>
+<td>/base/api/joindata/(tableIdRoot)/(tableIdJoin) /(columnsRoot)/(columnsJoin)/(limit)/</td>
+<td>GET</td>
+<td>Requisita o  join entre as tabelas de id <code>tableIdRoot</code> e <code>tableIdJoin</code>, incluindo as colunas <code>columnsRoot</code> e <code>columnsJoin</code> limitando às <code>limit</code> primeiras linhas</td>
+<td>Retorna um JSON contendo o join requisitado</td>
+<td>Retorna um erro de status 500 do servidor</td>
+</tr>
+<tr>
+<td>/base/api/joindata/(tableIdRoot)/(tableIdJoin) /(columnsRoot)/(columnsJoin)/(groupBy)/(aggFunc) /(aggColumns)</td>
+<td>GET</td>
+<td>Requisita o  join entre as tabelas de id <code>tableIdRoot</code> e <code>tableIdJoin</code>, incluindo as colunas <code>columnsRoot</code> e <code>columnsJoin</code>, agrupando pela coluna <code>groupBy</code> aplicando a função de agregação <code>aggFunc</code> nas colunas <code>aggColumns</code></td>
+<td>Retorna um JSON contendo o join requisitado</td>
+<td>Retorna um erro de status 500 do servidor</td>
 </tr>
 <tr>
 <td></td>
