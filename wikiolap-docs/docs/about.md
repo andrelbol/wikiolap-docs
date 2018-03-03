@@ -11,11 +11,22 @@ Wikiolap é um projeto inicialmente de TCC ([Wikiolapbase](https://github.com/pe
 ## Membros
 
 ### Orientadores:
-![Flávio Coutinho](http://www.decom.cefetmg.br/galerias/fotos_pessoas/flaviocoutinho.png)
+<img src="http://www.decom.cefetmg.br/galerias/fotos_pessoas/evandrino.jpg" alt="Evandrino Barros" style="width: 100px; height: 100px"/>
+**Evandrino Gomes Barros**
+
+<img src="http://www.decom.cefetmg.br/galerias/fotos_pessoas/flaviocoutinho.png" alt="Flávio Coutinho"  style="width: 100px; height: 100px"/>
 **Flávio dos Santos Coutinho**
-![Glívia Angélica Rodrigues Barbosa](http://www.decom.cefetmg.br/galerias/fotos_pessoas/gliviabarbosa.png)
+
+<img src="http://www.decom.cefetmg.br/galerias/fotos_pessoas/gliviabarbosa.png" alt="Glívia Angélica Rodrigues Barbosa" style="width: 100px; height: 100px" />
 **Glívia Angélica Rodrigues Barbosa**
-![Ismael Santana Silva](http://www.decom.cefetmg.br/galerias/fotos_pessoas/ismaelsantana.png)
-Ismael Santana Silva
+
+<img src="http://www.decom.cefetmg.br/galerias/fotos_pessoas/ismaelsantana.png" alt="Ismael Santana Silva" style="width: 100px; height: 100px" />
+**Ismael Santana Silva**
+
 
 ### Orientandos (Desenvolvedores)
+<img src="https://scontent.fsdu11-1.fna.fbcdn.net/v/t1.0-1/c0.36.160.160/p160x160/26165348_759292134266791_322437115450512851_n.jpg?oh=53c42f2acf6db80be5bfb6c91e8301ce&oe=5B10EA07" alt="Amanda Pereira" style="width: 100px; height: 100px"/>
+**Amanda Pereira**
+
+<img src="https://scontent.fsdu11-1.fna.fbcdn.net/v/t1.0-1/c170.50.621.621/s160x160/539426_340533166042059_1265321551_n.jpg?oh=49823716cf68e6489e3a270b89231197&oe=5B3EAF8A" alt="André Borges" style="width: 100px; height: 100px"/>
+**André Luís Borges de Oliveira**
