@@ -1,0 +1,9 @@
+site_name: Wikiolap Docs
+site_description: Documentation of the Wikiolap project.
+repo_url: https://bitbucket.org/wikiolapteam/wikiolap.git
+pages:
+  - Home: index.md
+  - REST API:
+    - Urls: 'rest-api/urls.md'
+  - About: about.md
+theme: 'flatly'
