@@ -91,6 +91,8 @@
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#urls-disponiveis">Urls Disponíveis</a></li>
             <li><a href="#wikiolapbase">Wikiolapbase</a></li>
+            <li><a href="#wikiolap-visualizations">Wikiolap Visualizations</a></li>
+            <li><a href="#wikiolap-authentication">Wikiolap Authentication</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -213,47 +215,110 @@
 <td>Retorna um JSON contendo o join requisitado</td>
 <td>Retorna um erro de status 500 do servidor</td>
 </tr>
+</tbody>
+</table>
+<h2 id="wikiolap-visualizations">Wikiolap Visualizations</h2>
+<table>
+<thead>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<th>Url</th>
+<th>Método</th>
+<th>Ação</th>
+<th>Sucesso</th>
+<th>Erro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/visualizations/page-list/</td>
+<td>GET</td>
+<td>Requisita todas as páginas salvas no banco de dados</td>
+<td>Retorna um JSON contendo um vetor de páginas</td>
+<td>Retorna um erro identificado pelo status passado</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/visualizations/page-list/</td>
+<td>POST</td>
+<td>Requisita a criação de uma página que deve ser passada como parâmetro da requisição</td>
+<td>Cria a página e retorna um JSON contendo a página criada</td>
+<td>Retorna um erro identificado pelo status passado</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/visualizations/page-detail/(id)/</td>
+<td>GET</td>
+<td>Requisita a página de id <code>id</code></td>
+<td>Retorna um JSON com a página requisitada</td>
+<td>Retorna um erro identificado pelo status passado</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/visualizations/page-detail/(id)/</td>
+<td>PUT</td>
+<td>Requisita a atualização da página de id 'id'. Deve ser passada um objeto página como parâmetro</td>
+<td>Requisita a atualização da página completa no banco de dados e retorna um JSON contendo a página</td>
+<td>Retorna um erro identificado pelo status passado</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/visualizations/page-detail/(id)/</td>
+<td>DELETE</td>
+<td>Requisita a deleção da página de id <code>id</code></td>
+<td>Retorna uma resposta de status 201 NO CONTENT</td>
+<td>Retorna um erro identificado pelo status passado</td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td>/visualizations/metadata-list/?page=(page)&amp;text=(text)</td>
+<td>GET</td>
+<td>Requisita a página <code>page</code> do grupo de metadados de tabelas que contém <code>text</code> no título ou na descrição</td>
+<td>Retorna um JSON contendo um array de metadados</td>
+<td>Retorna um erro identificado pelo status passado</td>
+</tr>
+<tr>
+<td>/visualizations/metadata-detail/(id)/</td>
+<td>GET</td>
+<td>Requisita os metadados de id <code>id</code></td>
+<td>Retorna um JSON contendo os metadados`</td>
+<td>Retorna um erro identificado pelo status passado</td>
+</tr>
+<tr>
+<td>/visualizations/metadata-detail/(id)/</td>
+<td>PUT</td>
+<td>Requisita a atualização dos metadados de id <code>id</code></td>
+<td>Atualiza os metadados e retorna um JSON com os metadados atualizados</td>
+<td>Retorna um erro identificado pelo status passado</td>
+</tr>
+<tr>
+<td>/visualizations/metadata-detail/(id)/</td>
+<td>DELETE</td>
+<td>Requisita a deleção dos metadados de id <code>id</code></td>
+<td>Deleta os metadados de id <code>id</code> e retorna uma resposta com status 201 NO CONTENT</td>
+<td>Retorna um erro identificado pelo status passado</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wikiolap-authentication">Wikiolap Authentication</h2>
+<table>
+<thead>
+<tr>
+<th>Url</th>
+<th>Método</th>
+<th>Ação</th>
+<th>Sucesso</th>
+<th>Erro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/authentication/user-login/</td>
+<td>POST</td>
+<td>Requisita o login de um usuário passado como parâmetro</td>
+<td>Salva o usuário passado na sessão do navegador e retorna uma resposta de status 200 SUCCESS</td>
+<td>Retorna um erro identificado pelo status passado</td>
+</tr>
+<tr>
+<td>/authentication/user-logout/</td>
+<td>DELETE</td>
+<td>Requisita o logout do usuário logado no momento</td>
+<td>Remove o usuário da sessão do navegador e retorna uma resposta 200 NO CONTENT</td>
+<td>Retorna um erro identificado pelo status passado</td>
 </tr>
 </tbody>
 </table></div>
