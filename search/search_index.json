@@ -1,0 +1,79 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Wikiolap Docs\n\n\n\n\n\n\nO que \u00e9?\n\n\nWikiolap \u00e9 uma plataforma Web de an\u00e1lise, compartilhamento e visualiza\u00e7\u00e3o de dados.\n\n\nTecnologias\n\n\nAs tecnologias usadas no desenvolvimento do aplicativo s\u00e3o:\n\n\n\n\nDjango Framework\n: framework que tem como base a linguagem \nPython\n para desenvolvimento de aplica\u00e7\u00f5es web.\n\n\nMongoDB\n: Banco de dados NoSQL que utiliza a abordagem orientada a documentos para o armazenamento.\n\n\nCassandra\n: Banco de dados NoSQL que utiliza uma abordagem de fam\u00edlia de colunas no armazenamento dos dados.\n\n\nSpark\n: Aplica\u00e7\u00e3o de processamento de dados em larga escala, orientado ao processamento em Clusters.\n\n\n\n\nREST API\n\n\nO \nRepresentational State Transfer\n (REST) \u00e9 um estilo arquitetural de aplica\u00e7\u00e3o que regula como ser\u00e3o acessados os servi\u00e7os dessa. Um dos focos dessa arquitetura por exemplo \u00e9 tirar proveito dos m\u00e9todos existentes nas requisi\u00e7\u00f5es HTTP, onde uma mesma url pode tanto acessar um dado, quanto modific\u00e1-lo ou at\u00e9 remov\u00ea-lo. Essa estrutura \u00e9 utilizada no Wikiolap atrav\u00e9s dos frameworks \nDjango REST Framework\n e \nDjango REST Framework Mongoengine\n (adapta\u00e7\u00e3o para o banco de dados do Mongo).\n\n\nAssim, grande parte da aplica\u00e7\u00e3o comunica-se atrav\u00e9s de \nrequisi\u00e7\u00f5es\n que retornam os dados requisitados ou realizam alguma altera\u00e7\u00e3o.\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Home"
+        },
+        {
+            "location": "/#wikiolap-docs",
+            "text": "",
+            "title": "Wikiolap Docs"
+        },
+        {
+            "location": "/#o-que-e",
+            "text": "Wikiolap \u00e9 uma plataforma Web de an\u00e1lise, compartilhamento e visualiza\u00e7\u00e3o de dados.",
+            "title": "O que \u00e9?"
+        },
+        {
+            "location": "/#tecnologias",
+            "text": "As tecnologias usadas no desenvolvimento do aplicativo s\u00e3o:   Django Framework : framework que tem como base a linguagem  Python  para desenvolvimento de aplica\u00e7\u00f5es web.  MongoDB : Banco de dados NoSQL que utiliza a abordagem orientada a documentos para o armazenamento.  Cassandra : Banco de dados NoSQL que utiliza uma abordagem de fam\u00edlia de colunas no armazenamento dos dados.  Spark : Aplica\u00e7\u00e3o de processamento de dados em larga escala, orientado ao processamento em Clusters.",
+            "title": "Tecnologias"
+        },
+        {
+            "location": "/#rest-api",
+            "text": "O  Representational State Transfer  (REST) \u00e9 um estilo arquitetural de aplica\u00e7\u00e3o que regula como ser\u00e3o acessados os servi\u00e7os dessa. Um dos focos dessa arquitetura por exemplo \u00e9 tirar proveito dos m\u00e9todos existentes nas requisi\u00e7\u00f5es HTTP, onde uma mesma url pode tanto acessar um dado, quanto modific\u00e1-lo ou at\u00e9 remov\u00ea-lo. Essa estrutura \u00e9 utilizada no Wikiolap atrav\u00e9s dos frameworks  Django REST Framework  e  Django REST Framework Mongoengine  (adapta\u00e7\u00e3o para o banco de dados do Mongo).  Assim, grande parte da aplica\u00e7\u00e3o comunica-se atrav\u00e9s de  requisi\u00e7\u00f5es  que retornam os dados requisitados ou realizam alguma altera\u00e7\u00e3o.",
+            "title": "REST API"
+        },
+        {
+            "location": "/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
+            "location": "/rest-api/urls/",
+            "text": "Urls Dispon\u00edveis\n\n\nWikiolapbase\n\n\n\n\n\n\n\n\nUrl\n\n\nM\u00e9todo\n\n\nA\u00e7\u00e3o\n\n\nSucesso\n\n\nErro\n\n\n\n\n\n\n\n\n\n\n/base/api/getdata/<table_id>/\n\n\nGET\n\n\nRequisita os dados da tabela com id igual a \ntable_id\n\n\nRetorna um JSON contendo os dados requisitados\n\n\nRetorna um erro de status 500 do servidor\n\n\n\n\n\n\n/base/api/getmetadata/<datasetID>/\n\n\nGET\n\n\nRequisita os metadados da tabela de id \ndatasetID\n\n\nRetorna um JSON contendo os metadados da tabela\n\n\nRetorna um erro de status 500 do servidor\n\n\n\n\n\n\n/base/api/getrandommetadata/<limit>/\n\n\nGET\n\n\nRequisita os metadados de \nlimit\n tabelas aleat\u00f3rioas\n\n\nRetorna um JSON contendo um array de metadados de tabelas\n\n\nRetorna um erro de status 500 do servidor\n\n\n\n\n\n\n/base/api/searchmetadata/<keywords>\n\n\nGET\n\n\nRequisita os metadados de tabelas que possuam \nkeywords\n no t\u00edtulo ou descri\u00e7\u00e3o\n\n\nRetorna um JSON contendo um array de metadados\n\n\nRetorna um erro de status 500 do servidor",
+            "title": "Urls"
+        },
+        {
+            "location": "/rest-api/urls/#urls-disponiveis",
+            "text": "",
+            "title": "Urls Dispon\u00edveis"
+        },
+        {
+            "location": "/rest-api/urls/#wikiolapbase",
+            "text": "Url  M\u00e9todo  A\u00e7\u00e3o  Sucesso  Erro      /base/api/getdata/<table_id>/  GET  Requisita os dados da tabela com id igual a  table_id  Retorna um JSON contendo os dados requisitados  Retorna um erro de status 500 do servidor    /base/api/getmetadata/<datasetID>/  GET  Requisita os metadados da tabela de id  datasetID  Retorna um JSON contendo os metadados da tabela  Retorna um erro de status 500 do servidor    /base/api/getrandommetadata/<limit>/  GET  Requisita os metadados de  limit  tabelas aleat\u00f3rioas  Retorna um JSON contendo um array de metadados de tabelas  Retorna um erro de status 500 do servidor    /base/api/searchmetadata/<keywords>  GET  Requisita os metadados de tabelas que possuam  keywords  no t\u00edtulo ou descri\u00e7\u00e3o  Retorna um JSON contendo um array de metadados  Retorna um erro de status 500 do servidor",
+            "title": "Wikiolapbase"
+        },
+        {
+            "location": "/about/",
+            "text": "Equipe Wikiolap\n\n\n\n\nSobre o projeto\n\n\nWikiolap \u00e9 um projeto inicialmente de TCC (\nWikiolapbase\n) de um aluno da faculdade  \nCEFET-MG\n, do departamento de computa\u00e7\u00e3o \nDECOM\n. Ap\u00f3s a conclus\u00e3o desse projeto inicial, mais projetos foram criados para dar continuidade da cria\u00e7\u00e3o, entre eles:\n\n\n\n\nWikiolap: projeto principal, respons\u00e1vel pela maior parte desse projeto. Tamb\u00e9m possui uma parte do front-end separada, mas que futuramente ser\u00e1 incorporada para formar a plataforma web.\n\n\nWikiolap Android: aplicativo android que tamb\u00e9m consome dados desse projeto, apesar de desenvolvido separadamente.\n\n\n\n\nMembros\n\n\nOrientadores:\n\n\n\n\nFl\u00e1vio dos Santos Coutinho\n\n\n\n\nGl\u00edvia Ang\u00e9lica Rodrigues Barbosa\n\n\n\nIsmael Santana Silva\n\n\nOrientandos (Desenvolvedores)\n\n\n\nAmanda Pereira",
+            "title": "About"
+        },
+        {
+            "location": "/about/#equipe-wikiolap",
+            "text": "",
+            "title": "Equipe Wikiolap"
+        },
+        {
+            "location": "/about/#sobre-o-projeto",
+            "text": "Wikiolap \u00e9 um projeto inicialmente de TCC ( Wikiolapbase ) de um aluno da faculdade   CEFET-MG , do departamento de computa\u00e7\u00e3o  DECOM . Ap\u00f3s a conclus\u00e3o desse projeto inicial, mais projetos foram criados para dar continuidade da cria\u00e7\u00e3o, entre eles:   Wikiolap: projeto principal, respons\u00e1vel pela maior parte desse projeto. Tamb\u00e9m possui uma parte do front-end separada, mas que futuramente ser\u00e1 incorporada para formar a plataforma web.  Wikiolap Android: aplicativo android que tamb\u00e9m consome dados desse projeto, apesar de desenvolvido separadamente.",
+            "title": "Sobre o projeto"
+        },
+        {
+            "location": "/about/#membros",
+            "text": "",
+            "title": "Membros"
+        },
+        {
+            "location": "/about/#orientadores",
+            "text": "Fl\u00e1vio dos Santos Coutinho   Gl\u00edvia Ang\u00e9lica Rodrigues Barbosa  \nIsmael Santana Silva",
+            "title": "Orientadores:"
+        },
+        {
+            "location": "/about/#orientandos-desenvolvedores",
+            "text": "Amanda Pereira",
+            "title": "Orientandos (Desenvolvedores)"
+        }
+    ]
+}
