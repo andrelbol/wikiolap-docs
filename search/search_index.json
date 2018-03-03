@@ -47,7 +47,7 @@
         },
         {
             "location": "/about/",
-            "text": "Equipe Wikiolap\n\n\n\n\nSobre o projeto\n\n\nWikiolap \u00e9 um projeto inicialmente de TCC (\nWikiolapbase\n) de um aluno da faculdade  \nCEFET-MG\n, do departamento de computa\u00e7\u00e3o \nDECOM\n. Ap\u00f3s a conclus\u00e3o desse projeto inicial, mais projetos foram criados para dar continuidade da cria\u00e7\u00e3o, entre eles:\n\n\n\n\nWikiolap: projeto principal, respons\u00e1vel pela maior parte desse projeto. Tamb\u00e9m possui uma parte do front-end separada, mas que futuramente ser\u00e1 incorporada para formar a plataforma web.\n\n\nWikiolap Android: aplicativo android que tamb\u00e9m consome dados desse projeto, apesar de desenvolvido separadamente.\n\n\n\n\nMembros\n\n\nOrientadores:\n\n\n\n\nFl\u00e1vio dos Santos Coutinho\n\n\n\n\nGl\u00edvia Ang\u00e9lica Rodrigues Barbosa\n\n\n\nIsmael Santana Silva\n\n\nOrientandos (Desenvolvedores)\n\n\n\nAmanda Pereira",
+            "text": "Equipe Wikiolap\n\n\n\n\nSobre o projeto\n\n\nWikiolap \u00e9 um projeto inicialmente de TCC (\nWikiolapbase\n) de um aluno da faculdade  \nCEFET-MG\n, do departamento de computa\u00e7\u00e3o \nDECOM\n. Ap\u00f3s a conclus\u00e3o desse projeto inicial, mais projetos foram criados para dar continuidade da cria\u00e7\u00e3o, entre eles:\n\n\n\n\nWikiolap: projeto principal, respons\u00e1vel pela maior parte desse projeto. Tamb\u00e9m possui uma parte do front-end separada, mas que futuramente ser\u00e1 incorporada para formar a plataforma web.\n\n\nWikiolap Android: aplicativo android que tamb\u00e9m consome dados desse projeto, apesar de desenvolvido separadamente.\n\n\n\n\nMembros\n\n\nOrientadores:\n\n\n\n\nFl\u00e1vio dos Santos Coutinho\n\n\n\n\nGl\u00edvia Ang\u00e9lica Rodrigues Barbosa\n\n\n\nIsmael Santana Silva\n\n\nOrientandos (Desenvolvedores)",
             "title": "About"
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "location": "/about/#orientandos-desenvolvedores",
-            "text": "Amanda Pereira",
+            "text": "",
             "title": "Orientandos (Desenvolvedores)"
         }
     ]
