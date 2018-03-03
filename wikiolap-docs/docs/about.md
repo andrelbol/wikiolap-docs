@@ -25,8 +25,23 @@ Wikiolap é um projeto inicialmente de TCC ([Wikiolapbase](https://github.com/pe
 
 
 ### Orientandos (Desenvolvedores)
+#### Atualmente
+
 <img src="https://scontent.fsdu11-1.fna.fbcdn.net/v/t1.0-1/c0.36.160.160/p160x160/26165348_759292134266791_322437115450512851_n.jpg?oh=53c42f2acf6db80be5bfb6c91e8301ce&oe=5B10EA07" alt="Amanda Pereira" style="width: 100px; height: 100px"/>
-**Amanda Pereira**
+**Amanda Pereira (afp1103@gmail.com)**
 
 <img src="https://scontent.fsdu11-1.fna.fbcdn.net/v/t1.0-1/c170.50.621.621/s160x160/539426_340533166042059_1265321551_n.jpg?oh=49823716cf68e6489e3a270b89231197&oe=5B3EAF8A" alt="André Borges" style="width: 100px; height: 100px"/>
-**André Luís Borges de Oliveira**
+**André Luís Borges de Oliveira (andreluiborges1@gmail.com)**
+
+#### Temporários
+
+<img src="/img/default.jpeg" alt="Fabrício Fraga" style="width: 100px; height: 100px"/>
+**Fabrício Fraga Resende**
+
+<img src="/img/default.jpeg" alt="Pedro Henrique Silva" style="width: 100px; height: 100px"/>
+**Pedro Henrique Silva**
+
+#### Na Europa
+
+<img src="/img/Pedromb.jpeg" alt="Pedro Magalhães" style="width: 100px; height: 100px"/>
+**Pedro Magalhães Bernardo**
